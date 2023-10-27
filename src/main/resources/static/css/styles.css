@@ -1,0 +1,46 @@
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	text-align: center;
+	padding: 8px;
+	color: white
+}
+
+th {
+	color: white;
+}
+
+h1 {
+	text-align: center;
+	color: white
+}
+
+body {
+	background-color: Black;
+	text-align: center;
+	color: white;
+}
+
+a:link, a:visited {
+	background-color: red;
+	color: white;
+	padding: 2px 2px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+a:hover, a:active {
+	background-color: orange;
+}
+
+footer {
+	font-size: 15px;
+	text-align: center;
+	width: 100%;
+	color: yellow;
+}

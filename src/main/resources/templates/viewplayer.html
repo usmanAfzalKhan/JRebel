@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>View Player Page</title>
+<link rel="stylesheet" type="text/css" media="all"
+	th:href="@{/css/styles.css}" />
+</head>
+<body>
+	<h1>View Players</h1>
+	<hr>
+	<table border="1">
+		<tr>
+			<th>Player Name</th>
+			<th>Unit Class</th>
+		</tr>
+		<tr th:each="u : ${myplayers}">
+			<td th:text="${u.name}"></td>
+			<td th:text="${u.unitclass}"></td>
+		</tr>
+	</table>
+	<a href="/">Home Page</a>
+	<br>
+	<a href="/add">Add Player</a>
+	<br>
+	<hr>
+	<footer> Developed by: Jimmy Owusu & Usman Khan | Instructor:
+		Mallika Mallika & Johnathan Peneva </footer>
+</body>
+</html>

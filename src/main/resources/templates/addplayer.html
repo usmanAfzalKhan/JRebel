@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Add New Player Page</title>
+<link rel="stylesheet" type="text/css" media="all"
+	th:href="@{/css/styles.css}" />
+</head>
+<body>
+	<h1>Add New Player</h1>
+	<hr>
+	<form action="/add" method="post" th:object="${player}">
+		Player Name: <input type="text" th:field="*{name}"><br>
+		Unit Class: <select th:field="*{unitclass}">
+			<option th:each="u : *{unitclasses}" th:value="${u}" th:text="${u}">
+		</select><br> <input type="submit" value="Add Player">
+	</form>
+	<a href="/">Home Page</a>
+	<br>
+	<a href="/view">View Players</a>
+	<br>
+	<hr>
+	<footer> Developed by: Jimmy Owusu & Usman Khan | Instructor:
+		Mallika Mallika & Johnathan Peneva </footer>
+</body>
+</html>
